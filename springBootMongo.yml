@@ -12,7 +12,7 @@ spec:
         name: springboot
     spec:
       containers:
-      - image: dockerhandson/spring-boot-mongo
+      - image: nowornever2/amitdocker
         name: springboot
         ports:
         - name: springboot
