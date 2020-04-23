@@ -22,7 +22,7 @@ node{
         }
         sh 'docker push nowornever2/amitdocker'
      }
-     /**
+     
      stage("Deploy To Kubernetes Cluster Plugin"){
        kubernetesDeploy(
          configs: 'springBootMongo.yml', 
@@ -30,11 +30,11 @@ node{
          enableConfigSubstitution: true
         )
      }
-	**/ 
-	  
+	
+	  /**
       stage("Deploy To Kubernetes Cluster"){
         sh 'kubectl apply -f springBootMongo.yml'
-      } 
+      }   **/
      
 }
 
